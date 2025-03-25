@@ -37,7 +37,7 @@
         <p>As a passionate software developer, I specialize in building innovative and efficient solutions that solve complex problems and enhance user experiences.</p>
       </div>
       <div class="hero-image">
-        <img src="porfolio_img.heic" alt="Photo of Your Name" />
+        <img src="porfolio_img.png" alt="Photo of Your Name" />
       </div>
     </div>
   </header>
@@ -51,19 +51,32 @@
   </section>
 
     <!-- Resume -->
-    <section id="resume" class="section">
+    <section id="resume" class="section" style="text-align: center;">
         <h2>Resume</h2>
-        <p>You can view or download my resume below:</p>
-      
+        <p>Curious about my background? View my resume for a full overview of my professional journey and expertise. </p>
+    
         <div class="resume-buttons">
-          <a href="SDE_Backend.pdf" target="_blank" class="btn">View Resume</a>
-          <a href="SDE_Backend.pdf" download class="btn secondary">Download Resume</a>
+          <button class="btn" onclick="toggleResumePreview()">View Resume</button>
+
+        </div>
+    
+        <div id="resume-preview" class="resume-preview hidden">
+          <iframe src="SDE_Backend.pdf" title="Resume Preview"></iframe>
         </div>
       </section>
+    
+      <script>
+        function toggleResumePreview() {
+          const preview = document.getElementById('resume-preview');
+          preview.classList.toggle('hidden');
+        }
+      </script>
       
-
+  
+      
+ 
   <!-- Projects -->
-  <section id="projects" class="section">
+  <section id="projects" class="section" style="text-align: center;">
     <h2>Projects</h2>
     <div class="project-list">
       <div class="project">
@@ -102,7 +115,7 @@
 
   <!-- Footer -->
   <footer class="footer">
-    <p>© 2025 Your Name</p>
+    <p>© 2025 Harsh Shah</p>
   </footer>
 
   <script src="script.js"></script>
