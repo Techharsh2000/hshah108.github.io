@@ -22,3 +22,10 @@ const navMenu = document.querySelector(".nav-menu");
 hamburger.addEventListener("click", () => {
   navMenu.classList.toggle("active");
 });
+
+
+function toggleResumePreview() {
+    const preview = document.getElementById('resume-preview');
+    preview.classList.toggle('hidden');
+  }
+  
