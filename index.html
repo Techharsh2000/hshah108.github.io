@@ -1,22 +1,110 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <header>
-        <h1>Your Name</h1>
-        <p>Data Analyst | AI/ML Enthusiast | Software Developer</p>
-    </header>
-    <section>
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/your-username/project1">Project 1</a></li>
-            <li><a href="https://github.com/your-username/project2">Project 2</a></li>
-        </ul>
-    </section>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">Harsh Shah</a>
+
+      <button class="hamburger" aria-label="Toggle menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+
+      <ul class="nav-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Hello, I'm <span>Harsh Shah</span>.</h1>
+        <p>As a passionate software developer, I specialize in building innovative and efficient solutions that solve complex problems and enhance user experiences.</p>
+      </div>
+      <div class="hero-image">
+        <img src="porfolio_img.heic" alt="Photo of Your Name" />
+      </div>
+    </div>
+  </header>
+
+  <!-- About -->
+  <section id="about" class="section" style="text-align: center;">
+    <h2>About Me</h2>
+    <p>
+        I'm a software developer with a focus on creating clean, efficient code and delivering user-centric solutions. I thrive on solving complex problems and continuously learning new technologies to stay ahead in the ever-evolving tech landscape.
+    </p>
+  </section>
+
+    <!-- Resume -->
+    <section id="resume" class="section">
+        <h2>Resume</h2>
+        <p>You can view or download my resume below:</p>
+      
+        <div class="resume-buttons">
+          <a href="SDE_Backend.pdf" target="_blank" class="btn">View Resume</a>
+          <a href="SDE_Backend.pdf" download class="btn secondary">Download Resume</a>
+        </div>
+      </section>
+      
+
+  <!-- Projects -->
+  <section id="projects" class="section">
+    <h2>Projects</h2>
+    <div class="project-list">
+      <div class="project">
+        <h3>Project One</h3>
+        <p>Short description of the project and tools used.</p>
+        <a href="#">View Project →</a>
+      </div>
+      <div class="project">
+        <h3>Project Two</h3>
+        <p>Another quick project blurb to show your work.</p>
+        <a href="#">View Project →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+    <p>
+      <strong>Software Developer @ Brevitaz Systems</strong> (Jan 2022 - Aug 2023) <br />
+      <ul class="experience-list">
+        <li>Developed, tested, and deployed enterprise-level applications using <strong>Java</strong>, <strong>Spring</strong>, and <strong>Java EE</strong>, ensuring adherence to object-oriented design principles.</li>
+        <li>Created and integrated <strong>RESTful APIs</strong> and <strong>microservices</strong> to support data exchange and enhance system scalability across distributed environments.</li>
+        <li>Designed and implemented <strong>multithreaded applications</strong>, applying Java concurrency techniques to improve processing performance and manage parallel tasks efficiently.</li>
+        <li>Managed relational databases including <strong>SQL Server</strong>; wrote complex queries and stored procedures to support back-end functionality and ensure data integrity.</li>
+        <li>Utilized <strong>Amazon AWS</strong> services (EC2, S3, RDS) for deploying, hosting, and scaling cloud-based applications, enabling high availability and efficient data storage.</li>
+      </ul>
+    </p>
+  </section>
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <h2>Contact</h2>
+    <p>Feel free to reach out via email or social platforms.</p>
+    <p>Email: <a href="mailto:youremail@example.com">hshah108@asu.edu</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Your Name</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
